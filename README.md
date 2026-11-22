@@ -9,7 +9,7 @@ The project is implemented using plain HTML, CSS, and JavaScript. It has no buil
 ## Screenshots
 
 ### Light Mode
-![Light Mode Preview](images/light-mockup.jpg)
+![Light Mode Preview](images/light-mockup.png)
 
 ### Dark Mode
 ![Dark Mode Preview](images/dark-mockup.jpg)
