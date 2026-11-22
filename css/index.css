@@ -128,11 +128,12 @@ a {
 }
 
 .logo span {
-    font-size: 0.8125rem;
+    font-size: max(0.875rem, 14px);
     font-weight: 600;
     color: var(--text-light);
     display: block;
     margin-top: 2px;
+    line-height: 1.5;
 }
 
 .hamburger {
@@ -206,7 +207,8 @@ a {
     padding: 8px 14px;
     border-radius: 999px;
     font-weight: 700;
-    font-size: 0.8125rem;
+    font-size: max(0.9375rem, 14px);
+    line-height: 1.5;
     box-shadow: var(--shadow);
 }
 
@@ -257,7 +259,8 @@ a {
 
 .card p {
     color: var(--text-light);
-    font-size: 0.875rem;
+    font-size: max(0.9375rem, 14px);
+    line-height: 1.7;
 }
 
 /* ===== Fawry Section ===== */
@@ -388,8 +391,8 @@ footer {
 
 .footer p {
     color: var(--footer-link);
-    font-size: 0.8125rem;
-    line-height: 1.6;
+    font-size: max(0.9375rem, 14px);
+    line-height: 1.7;
 }
 
 .footer .whats-app {
@@ -419,8 +422,9 @@ footer {
 .day-row {
     display: flex;
     justify-content: space-between;
-    font-size: 0.75rem;
-    padding: 5px 0;
+    font-size: max(0.875rem, 13px);
+    line-height: 1.5;
+    padding: 6px 0;
     border-bottom: 1px solid var(--border-subtle);
     color: var(--text-light);
     flex-wrap: wrap;
@@ -442,6 +446,8 @@ footer {
 .rights {
     margin-top: 10px;
     padding: 10px;
+    font-size: max(0.875rem, 13px);
+    line-height: 1.6;
     border-top: 1px solid var(--primary-light);
     border-radius: calc(var(--radius) + 10px);
 }
@@ -557,11 +563,13 @@ footer {
 
     .btn {
         padding: 8px 16px;
-        font-size: 0.8125rem;
+        font-size: max(0.875rem, 14px);
+        line-height: 1.5;
     }
 
     .hero-text ul li {
-        font-size: 0.75rem;
+        font-size: max(0.875rem, 14px);
+        line-height: 1.5;
         padding: 6px 10px;
     }
 
@@ -579,6 +587,7 @@ footer {
 
     .voda-text ul li,
     .fawry-text ul li {
-        font-size: 0.75rem;
+        font-size: max(0.875rem, 14px);
+        line-height: 1.7;
     }
 }
