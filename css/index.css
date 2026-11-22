@@ -505,21 +505,21 @@ footer {
     }
 
     .header nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    z-index: 100;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 14px 5%;
-    background: var(--bg-main);
-    opacity: 0.95;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
-}
+        display: flex;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        background: var(--bg-main); /* تم التعديل هنا */
+        flex-direction: column;
+        padding: 16px 5%;
+        gap: 14px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        transform: translateY(-10px);
+        opacity: 0;
+        pointer-events: none;
+        transition: 0.25s;
+    }
 
     .hamburger span {
         display: block;
