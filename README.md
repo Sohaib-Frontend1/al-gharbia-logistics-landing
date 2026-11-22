@@ -6,6 +6,14 @@ This repository contains a static, responsive Arabic landing page for Al-Gharbia
 
 The project is implemented using plain HTML, CSS, and JavaScript. It has no build step, package manager, framework, database, or backend dependency.
 
+## Screenshots
+
+### Light Mode
+![Light Mode Preview](images/light-mockup.jpg)
+
+### Dark Mode
+![Dark Mode Preview](images/dark-mockup.jpg)
+
 ## Key Features
 
 - Arabic right-to-left layout.
