@@ -32,6 +32,15 @@
     --btn-glow: none;
     --btn-glow-hover: var(--shadow);
 
+    /* ===== Font Sizes (Accessibility Scale) ===== */
+    --fs-caption: max(0.8125rem, 13px);               /* 13 - 14.6px   */
+    --fs-small:   max(0.875rem, 14px);                /* 14 - 15.75px  */
+    --fs-body:    max(1rem, 16px);                    /* 16 - 18px     */
+    --fs-lead:    clamp(1.0625rem, 1.5vw, 1.1875rem); /* 17 - 21px     */
+    --fs-h3:      max(1.25rem, 20px);                 /* 20 - 22.5px   */
+    --fs-h2:      clamp(1.5rem, 2.8vw, 2rem);         /* 24 - 36px     */
+    --fs-h1:      clamp(1.75rem, 4vw, 2.75rem);       /* 28 - 49.5px   */
+
     /* ===== Layout ===== */
     --header-bg: var(--bg-main);
     --radius: 14px;
@@ -122,13 +131,13 @@ a {
 
 .logo {
     font-weight: 900;
-    font-size: 1.375rem;
+    font-size: var(--fs-h3);
     color: var(--text);
-    line-height: 1.1;
+    line-height: 1.2;
 }
 
 .logo span {
-    font-size: max(0.875rem, 14px);
+    font-size: var(--fs-small);
     font-weight: 600;
     color: var(--text-light);
     display: block;
@@ -148,7 +157,7 @@ a {
 .header nav a {
     color: var(--text);
     font-weight: 700;
-    font-size: 0.9375rem;
+    font-size: var(--fs-body);
     transition: var(--transition);
 }
 
@@ -163,6 +172,7 @@ a {
     padding: 10px 22px;
     border-radius: 10px;
     font-weight: 800;
+    font-size: var(--fs-body);
     transition: var(--transition);
     display: inline-block;
     box-shadow: var(--btn-glow);
@@ -184,15 +194,16 @@ a {
 }
 
 .hero-text h1 {
-    font-size: clamp(26px, 4vw, 42px);
+    font-size: var(--fs-h1);
     font-weight: 900;
     line-height: 1.2;
 }
 
 .hero-text h2 {
-    font-size: clamp(16px, 2vw, 20px);
+    font-size: var(--fs-lead);
     color: var(--text-light);
     margin: 12px 0 18px;
+    line-height: 1.5;
 }
 
 .hero-text ul {
@@ -207,7 +218,7 @@ a {
     padding: 8px 14px;
     border-radius: 999px;
     font-weight: 700;
-    font-size: max(0.9375rem, 14px);
+    font-size: var(--fs-small);
     line-height: 1.5;
     box-shadow: var(--shadow);
 }
@@ -229,9 +240,10 @@ a {
 }
 
 .services h2 {
-    font-size: clamp(22px, 3vw, 30px);
+    font-size: var(--fs-h2);
     font-weight: 900;
     margin-bottom: 24px;
+    line-height: 1.3;
 }
 
 .cards {
@@ -253,13 +265,14 @@ a {
 }
 
 .card h3 {
-    font-size: 1.125rem;
+    font-size: var(--fs-h3);
     margin-bottom: 8px;
+    line-height: 1.4;
 }
 
 .card p {
     color: var(--text-light);
-    font-size: max(0.9375rem, 14px);
+    font-size: var(--fs-body);
     line-height: 1.7;
 }
 
@@ -279,10 +292,11 @@ a {
 }
 
 .fawry-text h2 {
-    font-size: clamp(22px, 3vw, 28px);
+    font-size: var(--fs-h2);
     font-weight: 900;
     text-align: center;
     color: var(--primary);
+    line-height: 1.3;
 }
 
 .fawry-text ul {
@@ -292,8 +306,8 @@ a {
 
 .fawry-text ul li {
     font-weight: 700;
-    margin: 8px 0;
-    font-size: 0.9375rem;
+    margin: 10px 0;
+    font-size: var(--fs-body);
     line-height: 1.7;
     text-align: right;
     color: var(--primary);
@@ -310,7 +324,7 @@ a {
 }
 
 .yellow-box h2 {
-    font-size: clamp(28px, 5vw, 48px);
+    font-size: clamp(1.75rem, 5vw, 3rem);
     line-height: 1;
     display: flex;
     align-items: center;
@@ -344,13 +358,16 @@ a {
 }
 
 .voda-logo h2 {
-    font-size: clamp(26px, 4vw, 36px);
+    font-size: clamp(1.625rem, 4vw, 2.25rem);
     font-weight: 900;
+    line-height: 1.2;
 }
 
 .voda-text h3 {
-    font-size: clamp(18px, 2.5vw, 22px);
+    font-size: var(--fs-h3);
+    font-weight: 900;
     margin-bottom: 12px;
+    line-height: 1.4;
 }
 
 .voda-text ul {
@@ -358,9 +375,9 @@ a {
 }
 
 .voda-text ul li {
-    margin: 8px 0;
+    margin: 10px 0;
     font-weight: 600;
-    font-size: 0.9375rem;
+    font-size: var(--fs-body);
     text-align: right;
     line-height: 1.7;
 }
@@ -386,12 +403,13 @@ footer {
 
 .footer h3 {
     margin-bottom: 12px;
-    font-size: 1rem;
+    font-size: var(--fs-h3);
+    line-height: 1.4;
 }
 
 .footer p {
     color: var(--footer-link);
-    font-size: max(0.9375rem, 14px);
+    font-size: var(--fs-small);
     line-height: 1.7;
 }
 
@@ -422,12 +440,13 @@ footer {
 .day-row {
     display: flex;
     justify-content: space-between;
-    font-size: max(0.875rem, 13px);
+    font-size: var(--fs-caption);
     line-height: 1.5;
     padding: 6px 0;
     border-bottom: 1px solid var(--border-subtle);
     color: var(--text-light);
     flex-wrap: wrap;
+    gap: 6px;
 }
 
 .day-row:last-child {
@@ -446,7 +465,7 @@ footer {
 .rights {
     margin-top: 10px;
     padding: 10px;
-    font-size: max(0.875rem, 13px);
+    font-size: var(--fs-caption);
     line-height: 1.6;
     border-top: 1px solid var(--primary-light);
     border-radius: calc(var(--radius) + 10px);
@@ -557,19 +576,11 @@ footer {
         padding: 12px 4%;
     }
 
-    .logo {
-        font-size: 1.125rem;
-    }
-
     .btn {
         padding: 8px 16px;
-        font-size: max(0.875rem, 14px);
-        line-height: 1.5;
     }
 
     .hero-text ul li {
-        font-size: max(0.875rem, 14px);
-        line-height: 1.5;
         padding: 6px 10px;
     }
 
@@ -578,16 +589,5 @@ footer {
     .services,
     .footer {
         padding: 32px 4%;
-    }
-
-    .voda-text h3,
-    .fawry-text h2 {
-        font-size: 1.25rem;
-    }
-
-    .voda-text ul li,
-    .fawry-text ul li {
-        font-size: max(0.875rem, 14px);
-        line-height: 1.7;
     }
 }
