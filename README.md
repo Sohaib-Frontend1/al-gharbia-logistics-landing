@@ -14,6 +14,12 @@ The project is implemented using plain HTML, CSS, and JavaScript. It has no buil
 ### Dark Mode
 ![Dark Mode Preview](images/dark-mockup.jpg)
 
+## Live Demo
+
+You can view the live version of the website here:
+
+[https://sohaib-frontend1.github.io/al-gharbia-logistics-landing/](https://sohaib-frontend1.github.io/al-gharbia-logistics-landing/)
+
 ## Key Features
 
 - Arabic right-to-left layout.
